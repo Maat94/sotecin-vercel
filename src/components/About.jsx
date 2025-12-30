@@ -1,4 +1,4 @@
-import '../styles/About.css';
+import '../Styles/About.css';
 import tangoBadge from '../images/tango-consultor.png';
 
 const About = () => {

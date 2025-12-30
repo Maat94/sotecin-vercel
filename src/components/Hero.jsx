@@ -1,4 +1,4 @@
-import '../styles/Hero.css';
+import '../Styles/Hero.css';
 import mobileHero from "../images/mobile-hero3.png";
 import heroTango from "../images/hero-tango.png";
 

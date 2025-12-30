@@ -1,4 +1,4 @@
-import '../styles/Sells.css';
+import '../Styles/Sells.css';
 import SellerCert from '../images/seller-cert.svg';
 
 const Sells = () => {
