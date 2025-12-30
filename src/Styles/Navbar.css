@@ -1,0 +1,98 @@
+.custom-navbar {
+  background: rgba(23, 26, 32, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .navbar-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+/* Nombre principal */
+.brand-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  margin-bottom: 3px;
+}
+
+/* Claim */
+.navbar-claim {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.1rem;
+}
+
+/* LINKS */
+
+.custom-navbar .nav-link:hover {
+  color: #3b82f6;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: none;
+    backdrop-filter: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .navbar-collapse .nav-link {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #e5e7eb;
+  }
+
+  /* Nombre principal */
+  .brand-name {
+    font-size: 0.98rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 3px;
+  }
+
+  /* Claim */
+  .navbar-claim {
+    font-size: 0.66rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* ===============================
+   LAPTOP 15" TUNING
+   (1366px – 1600px)
+================================ */
+
+@media (max-width: 1600px) and (min-width: 1280px) {
+  .custom-navbar {
+    min-height: 67px;
+  }
+
+  /* Nombre principal */
+  .brand-name {
+    font-size: 1.06rem;
+    margin-bottom: 2px;
+  }
+
+  /* Claim */
+  .navbar-claim {
+    font-size: 0.68rem;
+  }
+
+  /* LINKS */
+
+  .custom-navbar .nav-link {
+    font-size: 0.93rem;
+  }
+}

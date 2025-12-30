@@ -1,0 +1,301 @@
+/* =========================
+   ABOUT – DARK STYLE
+========================= */
+
+/* =========================
+   VISIBILITY
+========================= */
+
+/* Oculto por defecto */
+.about-metrics.mobile-only {
+  display: none;
+}
+
+/* =========================
+   SECTION BASE
+========================= */
+
+.about-section {
+  background: radial-gradient(
+      circle at top left,
+      rgba(13, 110, 253, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(180deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+.about-section .container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* =========================
+   LEFT – TEXT
+========================= */
+
+.about-title {
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  color: #ffffff;
+}
+
+.about-title span {
+  color: #3b82f6;
+}
+
+.about-lead {
+  font-size: 1.05rem;
+  color: #cbd5f5;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
+
+.about-quote {
+  margin-top: 1.75rem;
+  padding-left: 1rem;
+  border-left: 3px solid #3b82f6;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* =========================
+   RIGHT – BADGE + METRICS
+========================= */
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-badge {
+  margin-bottom: 1.5rem;
+}
+
+.about-badge img {
+  width: 160px;
+  height: auto;
+  filter: drop-shadow(0 0 12px rgba(79, 140, 255, 0.35))
+    drop-shadow(0 0 30px rgba(79, 140, 255, 0.15));
+}
+
+/* =========================
+   METRICS GRID
+========================= */
+
+.about-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.about-metric {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.about-metric h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #3b82f6;
+  margin-bottom: 0.3rem;
+}
+
+.about-metric p {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+/* =========================
+   METRICS – HOVER
+========================= */
+
+.about-metric {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.about-metric:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(59, 130, 246, 0.35);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.04)
+  );
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+  .about-right {
+    margin-top: 3rem;
+  }
+
+  .about-badge {
+    margin-bottom: 2rem;
+  }
+
+  .about-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 576px) {
+  .desktop-only {
+    display: none;
+  }
+
+  /* Activamos SOLO visibilidad */
+  .about-metrics.mobile-only {
+    display: grid;
+  }
+
+  .about-section .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .about-section .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-right {
+    order: 1;
+    margin-bottom: 2rem;
+    margin-top: -0.75rem;
+  }
+
+  .about-left {
+    order: 2;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-badge {
+    text-align: center;
+    margin-bottom: -0.6rem;
+  }
+
+  .about-badge img {
+    width: 190px;
+  }
+
+  /* TITLE */
+
+  .about-title {
+    font-size: 0;
+    max-width: 90%;
+    margin: 0 auto 1.25rem;
+  }
+
+  .about-title span {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #3b82f6;
+    margin-bottom: 0.25rem;
+  }
+
+  .about-title::after {
+    content: 'Técnico Consultor Certificado\AMás de 25 años de experiencia';
+    white-space: pre-line;
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e5e7eb;
+    line-height: 1.45;
+  }
+
+  /* TEXT */
+
+  .about-lead {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+  }
+
+  .about-left p:nth-of-type(2) {
+    display: none;
+  }
+
+  .about-left p,
+  .about-lead,
+  .about-quote {
+    text-align: center;
+  }
+
+  .about-quote {
+    margin-top: 1.7rem;
+    padding: 0.85rem 1rem;
+    border-left: none;
+    border-radius: 14px;
+    background: rgba(59, 130, 246, 0.08);
+    font-size: 0.9rem;
+  }
+
+  /* METRICS */
+
+  .about-metrics {
+    order: 3;
+    margin-top: 2rem;
+  }
+
+  .about-metric {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.6rem 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(59, 130, 246, 0.35);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.02)
+    );
+    width: 90%;
+    margin-bottom: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .about-metric h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-metric p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .about-metric:nth-child(3) {
+    display: none;
+  }
+}

@@ -1,0 +1,260 @@
+/* ===============================
+   SERVICES SECTION
+================================ */
+
+.services-section {
+  background-color: #dbe2ea;
+}
+
+/* ===============================
+   CARD BASE
+================================ */
+
+.service-card {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* ===============================
+   ICON
+================================ */
+
+.service-icon {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   TEXT
+================================ */
+
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.2em;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #232323;
+}
+
+/* ===============================
+   COLOR VARIANTS
+================================ */
+
+.service-blue {
+  background: linear-gradient(
+    180deg,
+    rgba(13, 110, 253, 0.18),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+.service-green {
+  background: linear-gradient(
+    180deg,
+    rgba(25, 135, 84, 0.18),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+.service-orange {
+  background: linear-gradient(
+    180deg,
+    rgba(253, 126, 20, 0.18),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+.service-purple {
+  background: linear-gradient(
+    180deg,
+    rgba(111, 66, 193, 0.18),
+    rgba(255, 255, 255, 0.9)
+  );
+}
+
+/* ===============================
+   ICON COLORS
+================================ */
+
+.service-blue .service-icon {
+  color: #0d6efd;
+}
+
+.service-green .service-icon {
+  color: #198754;
+}
+
+.service-orange .service-icon {
+  color: #fd7e14;
+}
+
+.service-purple .service-icon {
+  color: #6f42c1;
+}
+
+/* ===============================
+   TITLE COLORS
+================================ */
+
+.service-blue h5 {
+  color: #0d3f9f;
+}
+
+.service-green h5 {
+  color: #145c38;
+}
+
+.service-orange h5 {
+  color: #a24a10;
+}
+
+.service-purple h5 {
+  color: #4a2a8a;
+}
+
+/* ===============================
+   SERVICES CTA BUTTON
+================================ */
+
+.services-section .btn {
+  padding: 0.65rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Botón primario */
+.services-section .btn-primary {
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.services-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  /* ===============================
+     SECTION
+  ================================ */
+
+  .services-section {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* ===============================
+     SECTION TITLE
+  ================================ */
+
+  .services-section h2 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+
+  .services-section .text-muted {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* ===============================
+     CARD
+  ================================ */
+
+  .service-card {
+    padding: 1.4rem;
+    border-radius: 16px;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Remove hover effects on mobile */
+  .service-card:hover {
+    transform: none;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  /* ===============================
+     ICON
+  ================================ */
+
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* ===============================
+     CARD TEXT
+  ================================ */
+
+  .service-card h5 {
+    font-size: 1rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-card p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  /* ===============================
+     CTA (NO CARD, CLEAN)
+  ================================ */
+
+  .services-section .text-center.mt-5 {
+    margin-top: 3.5rem !important;
+    padding: 0 1rem;
+  }
+
+  .services-section .text-center.mt-5 h5 {
+    font-size: 1.15rem;
+    line-height: 1.35;
+    margin-bottom: 0.75rem;
+  }
+
+  .services-section .text-center.mt-5 p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+  }
+
+  .services-section .text-center.mt-5 .btn-primary {
+    width: 70%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 14px;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .service-card {
+    padding: 1.75rem;
+  }
+
+  .service-card h5 {
+    font-size: 1.15rem;
+  }
+}

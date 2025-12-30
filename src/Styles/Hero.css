@@ -1,0 +1,219 @@
+/* CONTENEDOR GENERAL */
+.hero {
+  min-height: 100vh;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+
+  background: radial-gradient(
+      circle at 70% 55%,
+      rgba(59, 130, 246, 0.12),
+      transparent 45%
+    ),
+    linear-gradient(180deg, #1f2430 0%, #202730 60%, #1a1e23 100%);
+}
+
+/* TÍTULO */
+.hero-title {
+  font-size: clamp(3rem, 4vw, 2.9rem);
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.hero-line {
+  display: block;
+}
+
+.hero-line-1,
+.hero-line-3 {
+  font-weight: 600;
+}
+
+.hero-line-2 {
+  color: #3b82f6;
+  font-weight: 700;
+  margin: 0.15rem 0;
+}
+
+/* TEXTO */
+.hero-text {
+  max-width: 520px;
+  font-size: 1.05rem;
+  color: #c7cfdd;
+  margin-bottom: 1.75rem;
+}
+
+/* ACCIONES */
+.hero-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.hero-actions .btn {
+  padding: 0.65rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Botón principal */
+.hero-actions .btn-primary {
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.hero-actions .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Botón secundario */
+.hero-actions .btn-outline-light {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 0.65rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.hero-actions .btn-outline-light:hover {
+  background-color: rgba(59, 130, 246, 0.15);
+  border-color: #3b82f6;
+  color: #eaf2ff;
+  box-shadow: 0 8px 22px rgba(59, 130, 246, 0.25);
+  transform: translateY(-2px);
+}
+
+/* IMAGEN */
+.hero-image img {
+  max-width: 85%;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.35));
+}
+
+/* IMAGEN DESKTOP */
+
+.hero-img-desktop{
+  width: 97%;
+}
+
+/* ===============================
+   LAPTOP 15" TUNING
+   (1366px – 1600px)
+================================ */
+
+@media (max-width: 1600px) and (min-width: 1280px) {
+  .hero-actions .btn {
+    padding: 0.6rem 1.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .hero-img-desktop{
+  width: 95%;
+}
+
+}
+
+/* =========================
+   HERO – MOBILE
+   ========================= */
+@media (max-width: 768px) {
+  .hero-title,
+  .hero-text,
+  .hero-image,
+  .hero-actions {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero {
+    background: radial-gradient(
+        circle at 50% 20%,
+        rgba(59, 130, 246, 0.18),
+        transparent 55%
+      ),
+      linear-gradient(180deg, #1f2430 0%, #202730 60%, #1a1e23 100%);
+    padding-top: 4.5rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .hero .col-lg-6 {
+    text-align: center;
+  }
+
+  /* TEXTO */
+  .hero-title {
+    font-size: 2.05rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    max-width: 26ch;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-title span {
+    font-weight: 800;
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+    max-width: 40ch;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  /* IMAGEN SOLO MOBILE */
+  .hero-image {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+  }
+
+  /* BUTTONS */
+
+  .hero-actions {
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .hero-actions .btn-primary {
+    box-shadow: 0 6px 16px rgba(13, 110, 253, 0.25);
+  }
+
+  .hero-actions .btn-outline-light {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.35);
+    color: #e5e7eb;
+    opacity: 0.85;
+  }
+}

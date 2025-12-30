@@ -1,0 +1,237 @@
+.footer {
+  background-color: #2a2f36;
+  background-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    #1a1d20 25%,
+    #14171a 60%,
+    #0f1114 100%
+  );
+  padding: 4rem 0 2rem;
+  color: #cfd6e4;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #0f1114 100%
+  );
+
+  pointer-events: none;
+}
+
+/* Content */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Blocks */
+.footer-block {
+  text-align: center;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Titles */
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.footer-subtitle {
+  font-size: 0.9rem;
+  color: #8fa8ff;
+}
+
+/* Section headings */
+.footer-heading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+.footer-link {
+  display: block;
+  color: #cfd6e4;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #0d6efd;
+}
+
+/* List */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #cfd6e4;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-social {
+  color: #cfd6e4;
+  font-size: 1.2rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-social:hover {
+  color: #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* FOOTER CONTACT ICONS */
+
+.footer-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact i {
+  font-size: 1.1rem;
+}
+
+/* Color sutil para WhatsApp */
+.footer-contact .bi-whatsapp {
+  color: #25d366;
+}
+
+/* Email neutro */
+.footer-contact .bi-envelope {
+  color: #cfd6e4;
+}
+
+.footer-block a.footer-contact {
+  justify-content: center;
+}
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #8a94a6;
+}
+
+/* Author bottom */
+
+.footer-author {
+  color: #8fa8ff;
+  font-weight: 500;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  /* Footer container */
+  .footer {
+    padding: 3rem 0 1.5rem;
+    text-align: center;
+  }
+
+  /* Blocks */
+  .footer-block {
+    margin-bottom: 1.6rem;
+    min-height: auto;
+  }
+
+  /* Identity */
+  .footer-title {
+    font-size: 1.3rem;
+    letter-spacing: 0.03em;
+  }
+
+  .footer-subtitle {
+    font-size: 0.9rem;
+    margin-top: 0.15rem;
+  }
+
+  /* Section headings */
+  .footer-heading {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Contact links (clean) */
+  .footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    padding: 0.1rem 0;
+  }
+
+  .footer-contact i {
+    width: 1.2rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  /* Socials */
+  .footer-socials {
+    gap: 1.2rem;
+  }
+
+  .footer-social {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+  }
+
+  /* Footer bottom */
+  .footer-bottom {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    padding-top: 1.1rem;
+  }
+
+  .footer-author {
+    font-size: 0.75rem;
+  }
+
+  .footer-contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .footer-socials {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,343 @@
+.sells-section {
+  position: relative;
+  padding: 4rem 0;
+  background: linear-gradient(rgba(1, 14, 44, 0.75), rgba(30, 63, 143, 0.75)),
+    url('../images/sells-section.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sells-title {
+  font-size: clamp(2.1rem, 3.4vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.4rem;
+  color: #f1f5f9;
+  line-height: 1.2;
+}
+
+.sells-title span {
+  font-weight: 600;
+  color: #93c5fd;
+}
+
+.sells-title::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 1rem auto 0;
+  background-color: #3b82f6;
+  opacity: 0.6;
+  border-radius: 2px;
+}
+
+.sells-description--mobile {
+  display: none;
+}
+
+.sells-description {
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.sells-description strong {
+  font-weight: 500;
+  color: #fff;
+}
+
+.sells-text-wrap {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+.sells-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto;
+  max-width: 520px;
+}
+
+.sells-features li {
+  position: relative;
+  padding: 1rem 1.4rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 5px solid #3b82f6;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  transition: background 0.25s ease, transform 0.25s ease;
+  font-weight: 600;
+}
+
+.sells-features li:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(3px);
+}
+
+.sells-actions {
+  margin-top: 2.5rem;
+}
+
+.sells-actions .btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-size: 0.95rem;
+}
+
+.sells-actions .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(59, 130, 246, 0.55);
+}
+
+.sells-note {
+  margin-top: 3rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+}
+
+.sells-note::before {
+  content: '✓ ';
+  color: #92b8f5;
+  font-size: 1rem;
+}
+/* SELLER CERT */
+
+.sells-certification {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  max-width: 280px;
+  opacity: 0.95;
+}
+
+.sells-certification img {
+  width: 100%;
+  height: auto;
+}
+
+/* ===============================
+   LAPTOP 15" TUNING
+   (1366px – 1600px)
+================================ */
+
+@media (max-width: 1600px) and (min-width: 1280px) {
+  .sells-section {
+    padding: 1rem 0;
+  }
+
+  .sells-text-wrap {
+    padding: 1.8rem 1.75rem;
+    margin-top: 5px;
+    margin-bottom: 1.5rem;
+    max-width: 680px;
+  }
+
+  .sells-title {
+    font-size: 2.05rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .sells-description {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .sells-features ul {
+    margin: 1.5rem auto;
+    max-width: 460px;
+  }
+
+  .sells-features li {
+    padding: 0.85rem 1.2rem;
+    font-size: 0.9rem;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sells-actions {
+    margin-top: 2rem;
+  }
+
+  .sells-note {
+    margin-top: 2.2rem;
+  }
+
+  .sells-certification {
+    max-width: 260px;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  /* SECTION */
+  .sells-section {
+    padding: 2.5rem 0 3rem;
+    background: linear-gradient(rgba(1, 14, 44, 0.88), rgba(30, 63, 143, 0.88)),
+      url('../images/sells-section.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* CERTIFICATION */
+  .sells-certification {
+    position: static;
+    max-width: 280px;
+    margin: 0 auto 1.8rem;
+  }
+}
+
+/* ========================= MOBILE ======================= */
+
+/* =========================
+   SELLS – MOBILE UX FIRST
+========================= */
+
+@media (max-width: 576px) {
+  /* SECTION */
+  .sells-section {
+    padding: 2.5rem 0 3rem;
+    background: linear-gradient(rgba(1, 14, 44, 0.88), rgba(30, 63, 143, 0.88)),
+      url('../images/sells-section.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* CERTIFICATION */
+  .sells-certification {
+    position: static;
+    max-width: 230px;
+    margin: 0 auto 1.8rem;
+  }
+
+  /* TEXT */
+  .sells-text-wrap {
+    padding: 0 1.25rem;
+    margin-bottom: 1.25rem;
+    background: none;
+    backdrop-filter: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .sells-title {
+    font-size: 1.7rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #f8fafc;
+    text-align: center;
+  }
+
+  .sells-title span {
+    color: #93c5fd;
+  }
+
+  .sells-title::after {
+    display: none;
+  }
+
+  .sells-description--desktop {
+    display: none;
+  }
+
+  .sells-description--mobile {
+    display: block;
+    font-size: 0.95rem;
+    line-height: 1.45;
+    max-width: 320px;
+    margin: 0 auto 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* FEATURES – SIMPLE LIST */
+  .sells-features ul {
+    margin: 1.5rem auto 2rem;
+    padding: 0 1.25rem;
+    max-width: 420px;
+  }
+
+  .sells-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #f1f5f9;
+    border-left-width: 4px;
+  }
+
+  .sells-features li::before {
+    content: '✓';
+    color: #60a5fa;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+  }
+
+  .sells-features li:nth-child(1) {
+    display: none;
+  }
+
+  /* CTA */
+  .sells-actions {
+    padding: 0 1.25rem;
+    margin-top: 1.75rem;
+  }
+
+  .sells-actions .btn {
+    width: 90%;
+    padding: 0.9rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    box-shadow: 0 10px 22px rgba(59, 130, 246, 0.45);
+  }
+
+  /* NOTE */
+  .sells-note {
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.65);
+    text-transform: uppercase;
+  }
+
+  .sells-note::before {
+    content: '✓ ';
+    color: #61a2ed;
+  }
+}
